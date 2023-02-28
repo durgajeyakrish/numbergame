@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+		<button onClick="generateNumber()">Magic number</button>
+		<p id="number"></p>
+<script>
+	
+	var para=document.getElementById("number");
+	
+	function magicNumber(){
+		let num=math.trunc(math.random()*20);
+		return num;
+	}
+	function generateNumber(){
+		let n=magicNumber();
+		para.innerHTML=n;
+	}
+	function listBox(){
+		var uniqueNumber=[];
+		
+		while(uniqueNumber.length<20){
+			let setNumber=maginNumber();
+			var unique=uniqueNumber.includes(setNumber);
+				if(!unique){
+					uniqueNumber.push(setNumber); 
+				}
+		}
+	}
+</script>
+ </body>
+</html> 
